@@ -17,7 +17,9 @@ This is a simple web-service using Apache libraries.
     % docker run -p 8080:8080 simple-webservice
 
 ## How to test
-Open your local browser and use this URL `http://localhost:8080/hello`    
+Open your local browser and use this URL:
+*  `http://localhost:8080/hello`    
+*  `http://localhost:8080/goodbye`
 
 ## How to push it to DockerHub
     % docker login
