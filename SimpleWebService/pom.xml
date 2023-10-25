@@ -40,8 +40,14 @@
     </plugins>
   </build>
 
+  <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
 
   <dependencies>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5</version>
+    </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpcore</artifactId>

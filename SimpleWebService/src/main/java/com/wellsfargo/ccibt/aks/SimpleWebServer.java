@@ -7,8 +7,10 @@ import org.apache.http.impl.bootstrap.HttpServer;
 import org.apache.http.impl.bootstrap.ServerBootstrap;
 import org.apache.http.protocol.UriHttpRequestHandlerMapper;
 
+import com.wellsfargo.ccibt.aks.handler.ExceptionHandler;
 import com.wellsfargo.ccibt.aks.handler.GoodByeHandler;
 import com.wellsfargo.ccibt.aks.handler.HelloHandler;
+import com.wellsfargo.ccibt.aks.handler.RandomHandler;
 
 public class SimpleWebServer {
 
@@ -34,6 +36,9 @@ public class SimpleWebServer {
         UriHttpRequestHandlerMapper handlerMapper = new UriHttpRequestHandlerMapper();
         handlerMapper.register("/hello", new HelloHandler());
         handlerMapper.register("/goodbye", new GoodByeHandler());
+        handlerMapper.register("/exception", new ExceptionHandler());
+        handlerMapper.register("/random", new RandomHandler());
+
 
 
         // Set the request handler mapper

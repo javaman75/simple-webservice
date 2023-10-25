@@ -10,7 +10,7 @@ This is a simple web-service using Apache libraries.
 
     % java -jar target/SimpleWebService-1.0-SNAPSHOT-jar-with-dependencies.jar
 
-## How to create a docker image
+## How to create a docker image (your local docker must be running first)
     % docker build -t simple-webservice .    
 
 ## How to run the in docker
